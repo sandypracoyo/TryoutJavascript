@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function celciusToKelvin(value) {
+            let celcius = value;
+            return console.log(celcius + 273.15);
+        }
+
+        function kelvinToCelcius(value) {
+            let kelvin = value;
+            return console.log(kelvin - 273.15);
+        }
+
+        function fahrenheitToCelcius(value) {
+            let fahrenheit = value;
+            return console.log((fahrenheit - 32) * 5 / 9);
+        }
+
+        function celciusToFahrenheit(value) {
+            let celcius = value;
+            return console.log((celcius * 9) / 5 + 32);
+        }
+
+        function fahrenheitToKelvin(value) {
+            let fahrenheit = value;
+            return console.log((fahrenheit - 32) * 5 / 9 + 273.15);
+        }
+
+        function kelvinToFahrenheit(value) {
+            let kelvin = value;
+            return console.log((kelvin - 273.15) * 9 / 5 + 32);
+        }
+
+        celciusToKelvin(80)
+        kelvinToCelcius(298.15)
+        fahrenheitToCelcius(36.5)
+        celciusToFahrenheit(22)
+        fahrenheitToKelvin(234)
+        kelvinToFahrenheit(203)
+    </script>
+</body>
+
+</html>

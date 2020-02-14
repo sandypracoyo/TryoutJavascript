@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const kota = ['Jakarta', 'Aceh', 'Malang', 'Medan', 'Bontang', 'Jogja', 'Jakarta', 'Bandung', 'Malang', 'Solo',
+            'Palembang', 'Bandung'
+        ];
+
+        function hapusDuplikat(array) {
+            let x = {};
+            kota.forEach(function (i) {
+                if (!x[i]) {
+                    x[i] = true;
+                }
+            });
+            return Object.keys(x);
+        }
+        console.log(hapusDuplikat());
+    </script>
+</body>
+
+</html>

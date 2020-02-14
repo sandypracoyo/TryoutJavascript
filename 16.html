@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function palindrome(str) {
+            let awal = prompt('Masukkan ');
+            str = awal;
+            let re = /[^A-Za-z0-9]/g;
+            str = str.toLowerCase().replace(re, '');
+            var len = str.length;
+            for (var i = 0; i < len / 2; i++) {
+                if (str[i] !== str[len - 1 - i]) {
+                    return console.log('Input : ' + awal + '\n' + 'Output : False');
+                }
+            }
+            return console.log('Input : ' + awal + '\n' + 'Output : True');
+        }
+        palindrome();
+    </script>
+</body>
+
+</html>

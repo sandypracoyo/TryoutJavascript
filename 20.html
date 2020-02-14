@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function dataType(x) {
+            if (Array.isArray(x) === true) {
+                console.log('array');
+            } else if (Number.isInteger(x) === true && x % 1 === 0) {
+                console.log('Integer')
+            } else if (Number.isInteger(x) === true && x % 1 !== 0) {
+                console.log('Float');
+            } else {
+                console.log(typeof x)
+            }
+        }
+        dataType("392");
+        dataType('hello');
+        dataType('\`world\`');
+        dataType({});
+        dataType({
+            "hello": "world"
+        });
+        dataType([]);
+        dataType(["satu", "dua"]);
+        dataType(1);
+        dataType(1.25);
+        dataType(0o42);
+        dataType(0x1c);
+        dataType(0b11);
+    </script>
+</body>
+
+</html>
